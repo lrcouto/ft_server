@@ -20,5 +20,5 @@ EXPOSE 443/udp
 # Start services.
 ENTRYPOINT bash /root/start.sh
 
-# Manter container rodando
+# Keeps container running
 CMD tail -f /dev/null
