@@ -56,3 +56,6 @@ cp ./wp-config.php /var/www/localhost/wordpress
 
 # Move PHP info file to localhost folder.
 mv info.php /var/www/localhost
+
+# Override NGINX config file with my own.
+mv nginx.conf /etc/nginx/sites-available/default
