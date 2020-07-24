@@ -18,4 +18,7 @@ EXPOSE 443/tcp
 EXPOSE 443/udp
 
 # Start services.
-ENTRYPOINT BASH /root/start.sh
+ENTRYPOINT bash /root/start.sh
+
+# Manter container rodando
+CMD tail -f /dev/null
