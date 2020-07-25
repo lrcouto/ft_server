@@ -24,7 +24,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 
 # Setup MySQL database, username "root", no password.
 service mysql start
-mysql -u root -p -e "CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8".
+mysql -u root -p -e "CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;";
 mysqladmin -u root -p password ""
 service mysql stop
 
