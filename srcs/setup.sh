@@ -23,11 +23,10 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 	-keyout /etc/ssl/certs/localhost.key -out /etc/ssl/certs/localhost.crt
 
 # Setup MySQL database, username "root", no password.
-echo "CREATE DATABASE wordpress;"
-echo "GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'localhost' WITH GRANT OPTION;"
-echo "update mysql.user set plugin='mysql_native_password' where user='root';"
-echo "FLUSH PRIVILEGES;" | mysql -u root
-mysqladmin --user=root password ""
+service mysql start
+mysql -u root -p -e "CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8".
+mysqladmin -u root -p password ""
+service mysql stop
 
 # Download phpMyAdmin files from official website
 wget https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-english.tar.gz
