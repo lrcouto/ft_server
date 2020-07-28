@@ -1,5 +1,4 @@
 # NGINX config file location.
-
 nginx_file='/etc/nginx/sites-enabled/default'
 
 # Searches file for "autoindex on".
