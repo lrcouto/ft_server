@@ -19,31 +19,23 @@ Lists all containers.
 **docker image**
 Lists all images.
 
-**docker rm container_name**
-Removes container.
+**docker rm container_name** - Removes container.
 
-**docker rm $(docker ps -aq)**
-Removes all existing containers.
+**docker rm $(docker ps -aq)** - Removes all existing containers.
 
-**docker rmi image_name**
-Removes image.
+**docker rmi image_name** - Removes image.
 
-**docker rmi $(docker images -q)**
-Removes all existing images.
+**docker rmi $(docker images -q)** - Removes all existing images.
 
-**docker start/stop container_name**
-Turns container on or off.
+**docker start/stop container_name** - Turns container on or off.
 
-**docker attach container_name**
-Enters container.
+**docker attach container_name** - Enters container.
 
 While inside the container:
 
-**CTRL + D**
-Exits and stops the container.
+**CTRL + D** - Exits and stops the container.
 
-**CTRL + P, CTRL + Q**
-Exits container and keeps it running.
+**CTRL + P, CTRL + Q** - Exits container and keeps it running.
 
 # Work history:
 July 24th 2020 - Initial setup and tests. There's some kind of error on the PHP configuration that we haven't found it. No autoindex yet.
