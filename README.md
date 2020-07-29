@@ -1,5 +1,5 @@
 # ft_server
-This is a student project for 42 São Paulo. The objective is to set up a NGINX web server on a docker container, running a Wordpress website and a SQL database managed through phpMyAdmin. All of those services must interact smoothly with each other.
+This is a student project for 42 São Paulo. The objective is to set up a NGINX web server on a Docker container, running a Wordpress website and a SQL database managed through phpMyAdmin. All of those services must interact smoothly with each other.
 
 # How to run it:
 
