@@ -2,7 +2,7 @@
 FROM debian:buster
 
 # Updates Debian Buster.
-RUN apt-get update && apt-get upgrade
+RUN apt-get update -y && apt-get upgrade -y
 
 # Copy source files to the root of the container.
 COPY srcs /root/
